@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Landing Page</title>
+  <style>
+    body, .font {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    .header {
+        text-align: center;
+        padding: 50px;
+        background-color: #f8f9fa;
+    }
+    
+    .content {
+        margin: 50px;
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+   
+    }
+    
+    .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px;
+
+    }
+
+    .navbar a:hover{
+    background-color: #ddd;
+    color: black;
+    
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+    
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+    
+    p {
+        color: #666;
+    }
+    
+      
+      {%block styles%}
+      {%endblock%}
+      
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href='/list'>Attendance List</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        
+    </div>
+    <div class="header">
+        <h1>Online Attendance</h1>
+        <p>Building innovative solutions for the future.</p>
+    </div>
+    <div>
+        {% block content %}
+        {% endblock %}
+     </div>
+    <div class="content">
+        <h2 id="about">About Us</h2>
+        <p>We are a team of passionate students dedicated to creating a more technology efficient attendance system.</p>
+        <p>Discover our range of cutting-edge products designed to improve your everyday life.</p>
+        <h2 id="contact">Contact Us</h2>
+        <p>Have any questions or ideas? We'd love to hear from you. Contact us at info@ourstartup.com</p>
+    </div>
+    <div class="footer">
+        <p>© 2024 Group 5 STEM-2</p>
+    </div>
+</body>
+</html>
